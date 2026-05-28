@@ -207,6 +207,7 @@ section.title .meta-strip {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 section.title .chip {
   background: white;
@@ -215,10 +216,20 @@ section.title .chip {
   border: 1px solid rgba(106,27,154,0.15);
   font-size: 17px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 section.title .chip strong { color: var(--teal-500); font-family: var(--font-mono); }
 section.title .chip.crit { background: var(--ink); color: white; border-color: var(--ink); }
 section.title .chip.crit strong { color: var(--green-300); }
+section.title .meta-strip .title-stamp {
+  display: flex;
+  margin-bottom: 0;
+  padding: 12px 22px;
+  border-width: 1px;
+  font-size: 17px;
+  letter-spacing: normal;
+}
 
 section.title .authors {
   position: absolute;

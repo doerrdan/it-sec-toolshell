@@ -8,6 +8,10 @@ description: CVE-2025-53770 – Analyse, Auswirkungen und Gegenmaßnahmen
 author: Prissner Elias, Doerr Daniel, Maendler Lukas
 ---
 
+@@INCLUDE:slides/00-hero.md@@
+
+---
+
 @@INCLUDE:slides/01-titel.md@@
 
 ---

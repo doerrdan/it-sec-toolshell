@@ -8,7 +8,15 @@ description: CVE-2025-53770 – Analyse, Auswirkungen und Gegenmaßnahmen
 author: Prissner Elias, Doerr Daniel, Maendler Lukas
 ---
 
+<!-- _class: hero -->
+
+<img class="hero-logo" src="assets/sharepoint.svg" alt="Microsoft SharePoint logo" />
+
+---
+
 <!-- _class: title -->
+
+<div class="title-content">
 
 <div class="title-stamp">CVE-2025-53770</div>
 
@@ -21,6 +29,10 @@ author: Prissner Elias, Doerr Daniel, Maendler Lukas
 <div class="chip">Zero-Day RCE</div>
 <div class="chip">Kein Login nötig</div>
 </div>
+
+</div>
+
+<img class="sp-logo" src="assets/sharepoint.svg" alt="Microsoft SharePoint logo" />
 
 <div class="authors">
 Prissner Elias <span>·</span> Doerr Daniel <span>·</span> Maendler Lukas

@@ -2,32 +2,17 @@
 
 A Marp slide deck about CVE-2025-53770, with each slide kept in its own file under `slides/`.
 
-## Setup (once)
-
-```bash
-npm install               # installs marp-cli locally — no more npx every time
-```
-
-Theme path and `--allow-local-files` live in `.marprc.yml`, so `marp` picks
-them up automatically.
-
 ## Build
 
 ```bash
-npm run build             # assemble + render HTML + PDF
-npm run html              # just HTML
-npm run pdf               # just PDF
-npm run pptx              # PowerPoint export
-npm run preview           # PNG of each slide in preview/
-npm run watch             # live-reload server, rebuilds on save
+./build.sh           # assemble slides into presentation.md
+./build.sh html      # + render presentation.html
+./build.sh pdf       # + render presentation.pdf
+./build.sh all       # + HTML, PDF, and PNG preview of every slide
 ```
 
-Or, without npm:
-
-```bash
-./build.sh                # just assemble presentation.md
-./build.sh all            # assemble + HTML + PDF + previews (uses npx)
-```
+The script uses `npx` to fetch `@marp-team/marp-cli` on demand — no global
+install required.
 
 ## Project layout
 
@@ -37,9 +22,7 @@ presentation/
 ├── themes/toolshell.css     # custom Marp theme (SharePoint teal palette)
 ├── assets/                  # images, e.g. sharepoint.svg
 ├── presentation.template.md # references each slide via @@INCLUDE:...@@
-├── build.sh                 # inlines the includes into presentation.md
-├── .marprc.yml              # marp-cli config (theme, html, allow-local-files)
-├── package.json             # npm scripts and marp-cli devDependency
+├── build.sh                 # assembles + renders
 └── presentation.md          # generated, do not edit by hand
 ```
 
@@ -69,10 +52,8 @@ presentation/
 3. Rebuild:
 
    ```bash
-   npm run build
+   ./build.sh all
    ```
-
-   Or run `npm run watch` and just save the file — the browser reloads.
 
 ## Available CSS classes
 

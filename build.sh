@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Assemble slides/*.md into presentation.md.
-# Run with no args to just assemble; pass `all` to also render HTML, PDF and previews.
+#   ./build.sh         → just assemble
+#   ./build.sh html    → also render HTML
+#   ./build.sh pdf     → also render PDF
+#   ./build.sh all     → assemble + HTML + PDF + per-slide PNGs in preview/
 
 set -e
 cd "$(dirname "$0")"
@@ -22,13 +25,24 @@ awk '
 
 echo "✓ assembled $OUTPUT"
 
-if [[ "${1:-}" == "all" ]]; then
-  MARP="npx --yes @marp-team/marp-cli@latest"
-  $MARP "$OUTPUT" -o presentation.html
-  echo "✓ presentation.html"
-  $MARP "$OUTPUT" --pdf -o presentation.pdf
-  echo "✓ presentation.pdf"
-  rm -rf preview
-  $MARP "$OUTPUT" --images png -o preview/slide.png > /dev/null
-  echo "✓ preview/*.png"
-fi
+MARP="npx --yes @marp-team/marp-cli@latest --theme-set themes/toolshell.css --allow-local-files --html"
+
+case "${1:-}" in
+  html)
+    $MARP "$OUTPUT" -o presentation.html
+    echo "✓ presentation.html"
+    ;;
+  pdf)
+    $MARP "$OUTPUT" --pdf -o presentation.pdf
+    echo "✓ presentation.pdf"
+    ;;
+  all)
+    $MARP "$OUTPUT" -o presentation.html
+    echo "✓ presentation.html"
+    $MARP "$OUTPUT" --pdf -o presentation.pdf
+    echo "✓ presentation.pdf"
+    rm -rf preview
+    $MARP "$OUTPUT" --images png -o preview/slide.png > /dev/null
+    echo "✓ preview/*.png"
+    ;;
+esac

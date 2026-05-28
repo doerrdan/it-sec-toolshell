@@ -1,5 +1,0 @@
-theme: ./themes/toolshell.css
-allowLocalFiles: true
-html: true
-options:
-  looseYAML: false

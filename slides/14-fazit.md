@@ -3,11 +3,28 @@
 <h2><span class="pill-tag">Zusammenfassung</span>Was bleibt hängen</h2>
 
 <div class="conclusion-banner">
-Sehr kritische Schwachstelle – einfacher Angriff, enormer Schaden
+Einfacher Angriff – enormer Schaden
 </div>
 
 <div class="conclusion-list">
-<div class="ci">CVE-2025-53770 zeigt, wie eine einzige Sicherheitslücke zur vollständigen Kompromittierung führen kann – ohne Login, ohne Vorwarnung.</div>
-<div class="ci">Staatliche Akteure nutzen Zero-Days gezielt für Spionage und langfristige Infiltration wichtiger Institutionen und Unternehmen.</div>
-<div class="ci highlight">Nur durch konsequente Updates, aktives Monitoring und schnelle Reaktion lassen sich solche Angriffe abwehren oder begrenzen.</div>
+<div class="ci">CVE-2025-53770 – vollständige Kompromittierung ohne Login</div>
+<div class="ci">Staatliche Akteure nutzen Zero-Days für langfristige Infiltration</div>
+<div class="ci highlight">Updates · Monitoring · schnelle Reaktion</div>
 </div>
+
+<!--
+Zusammenfassung in drei Punkten:
+
+Erstens: CVE-2025-53770 zeigt, wie eine einzige Schwachstelle zur vollständigen Kompromittierung führen kann –
+ohne Login, ohne Vorwarnung, aus dem offenen Internet. Das ist kein theoretisches Szenario, sondern
+ein realer Angriff auf über 400 Organisationen weltweit, darunter in Deutschland.
+
+Zweitens: Staatlich geförderte APT-Gruppen wie Linen Typhoon oder Violet Typhoon nutzen solche Zero-Days gezielt,
+nicht für schnellen Einbruch, sondern für langfristige, stille Infiltration wichtiger Institutionen.
+Das Ziel ist Spionage, Datendiebstahl und strategischer Zugriff – nicht zwingend sofortiger Schaden.
+
+Drittens – und das ist die wichtigste Botschaft zum Mitnehmen:
+Nur durch konsequente Updates, aktives Monitoring und schnelle Incident Response
+lassen sich solche Angriffe abwehren oder zumindest begrenzen.
+Technische Maßnahmen allein reichen nicht – es braucht auch organisatorische Prozesse.
+-->

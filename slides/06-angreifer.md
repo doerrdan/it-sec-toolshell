@@ -1,6 +1,6 @@
 # Die <span class="accent">Angreifer</span>
 
-<h2><span class="pill-tag">Threat Actors</span>Staatlich geförderte APT-Gruppen</h2>
+<h2><span class="pill-tag">Threat Actors</span>Staatlich geförderte APT-Gruppen <span style="font-weight:400;font-size:.75em;opacity:.7">(Quellen: Microsoft MSRC, Palo Alto Unit42)</span></h2>
 
 <div class="attackers">
 
@@ -10,7 +10,7 @@
 <div class="ico">LT</div>
 <div>
 <h3>Linen Typhoon</h3>
-<p>Chinesische APT-Gruppe, spezialisiert auf das Stehlen von geistigem Eigentum. Ziele: Behörden, Verteidigung, Menschenrechtsgruppen.</p>
+<p>Geistiges Eigentum · Behörden · Verteidigung</p>
 </div>
 </div>
 
@@ -18,7 +18,7 @@
 <div class="ico">VT</div>
 <div>
 <h3>Violet Typhoon</h3>
-<p>Chinesische APT-Gruppe, spezialisiert auf Spionage in den USA, Europa und Ostasien. Ziele: Behörden, Militär (ehem. Personal)…</p>
+<p>Spionage · USA, Europa, Ostasien</p>
 </div>
 </div>
 
@@ -26,7 +26,7 @@
 <div class="ico">S</div>
 <div>
 <h3>Storm-2603</h3>
-<p>Wahrscheinlich in China ansässige Gruppe. Finanzielle und spionage-relevante Motivation.</p>
+<p>Finanziell & spionage-motiviert · China</p>
 </div>
 </div>
 
@@ -41,3 +41,19 @@
 </div>
 
 </div>
+
+<!--
+Drei Bedrohungsakteure wurden im Zusammenhang mit ToolShell identifiziert – alle mit Verbindungen nach China.
+
+Linen Typhoon: spezialisiert auf den Diebstahl von geistigem Eigentum. Ziele sind vor allem Behörden,
+Verteidigungsunternehmen und Menschenrechtsorganisationen.
+
+Violet Typhoon: fokussiert auf Spionage in den USA, Europa und Ostasien. Besonderes Interesse an
+Militärpersonal und Regierungsstellen.
+
+Storm-2603: neuere Gruppe, wahrscheinlich in China ansässig, mit gemischter Motivation – sowohl
+finanzieller Gewinn als auch strategische Spionage.
+
+Gemeinsam ist allen drei Gruppen das Ziel langfristiger, stiller Persistenz: nicht schnell zuschlagen,
+sondern monatelang unentdeckt Daten abgreifen und Zugänge für spätere Operationen sichern.
+-->

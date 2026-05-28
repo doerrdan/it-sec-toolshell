@@ -8,7 +8,6 @@
 <div class="badge pink">CVE</div>
 <div class="body">
 <em>Common Vulnerabilities and Exposures</em>
-<p>Eindeutige ID für jede bekannte Sicherheitslücke – weltweit einheitlicher Standard.</p>
 </div>
 </div>
 
@@ -16,7 +15,6 @@
 <div class="badge purple">APT</div>
 <div class="body">
 <em>Advanced Persistent Threat</em>
-<p>Professionelle, oft staatlich finanzierte Hackergruppen mit langfristigen, gezielten Angriffszielen.</p>
 </div>
 </div>
 
@@ -24,16 +22,30 @@
 <div class="badge dark">CVSS</div>
 <div class="body">
 <em>Score 0 – 10</em>
-<p>Misst die Gefährlichkeit einer Schwachstelle. 9.8 bedeutet: extrem kritisch, sofortiger Handlungsbedarf.</p>
 </div>
 </div>
 
 <div class="term">
 <div class="badge peach">BSI</div>
 <div class="body">
-<em>Bundesamt für Sicherheit in der IT</em>
-<p>Deutsche Behörde, die IT-Bedrohungen offiziell bewertet und Warnungen herausgibt.</p>
+<em>Bundesamt für Sicherheit in der Informationstechnik</em>
 </div>
 </div>
 
 </div>
+
+<!--
+Kurze Erklärung der vier Begriffe, die im Vortrag immer wieder fallen:
+
+CVE – Common Vulnerabilities and Exposures: eindeutige, weltweit einheitliche ID für jede bekannte Sicherheitslücke.
+Beispiel: CVE-2025-53770 ist die ID für genau diese SharePoint-Lücke.
+
+APT – Advanced Persistent Threat: professionelle, oft staatlich finanzierte Hackergruppen.
+"Persistent" bedeutet: die bleiben lange im System, ohne entdeckt zu werden – kein schneller Einbruch, sondern monatelange stille Infiltration.
+
+CVSS – Common Vulnerability Scoring System: Skala von 0 bis 10, misst die Gefährlichkeit einer Schwachstelle.
+9.8 ist quasi das Maximum – bedeutet: extrem kritisch, sofortiger Handlungsbedarf.
+
+BSI – Bundesamt für Sicherheit in der Informationstechnik: die deutsche Bundesbehörde, die IT-Bedrohungen offiziell bewertet und Warnungen herausgibt.
+Das BSI hat für diesen Angriff die Kritikalitätsstufe Orange vergeben.
+-->

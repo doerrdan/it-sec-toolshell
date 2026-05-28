@@ -2,15 +2,31 @@
 
 A Marp slide deck about CVE-2025-53770, with each slide kept in its own file under `slides/`.
 
+## Setup (once)
+
+```bash
+npm install               # installs marp-cli locally — no more npx every time
+```
+
+Theme path and `--allow-local-files` live in `.marprc.yml`, so `marp` picks
+them up automatically.
+
 ## Build
 
 ```bash
-./build.sh                    # concat slides/*.md into presentation.md
+npm run build             # assemble + render HTML + PDF
+npm run html              # just HTML
+npm run pdf               # just PDF
+npm run pptx              # PowerPoint export
+npm run preview           # PNG of each slide in preview/
+npm run watch             # live-reload server, rebuilds on save
+```
 
-# render
-npx @marp-team/marp-cli presentation.md --html  --theme-set themes/toolshell.css --allow-local-files -o presentation.html
-npx @marp-team/marp-cli presentation.md --pdf   --html --theme-set themes/toolshell.css --allow-local-files -o presentation.pdf
-npx @marp-team/marp-cli presentation.md --images png  --theme-set themes/toolshell.css --allow-local-files -o preview/slide.png
+Or, without npm:
+
+```bash
+./build.sh                # just assemble presentation.md
+./build.sh all            # assemble + HTML + PDF + previews (uses npx)
 ```
 
 ## Project layout
@@ -22,6 +38,8 @@ presentation/
 ├── assets/                  # images, e.g. sharepoint.svg
 ├── presentation.template.md # references each slide via @@INCLUDE:...@@
 ├── build.sh                 # inlines the includes into presentation.md
+├── .marprc.yml              # marp-cli config (theme, html, allow-local-files)
+├── package.json             # npm scripts and marp-cli devDependency
 └── presentation.md          # generated, do not edit by hand
 ```
 
@@ -48,12 +66,16 @@ presentation/
    @@INCLUDE:slides/16-new-slide.md@@
    ```
 
-3. Rebuild and re-render:
+3. Rebuild:
 
    ```bash
-   ./build.sh && npx @marp-team/marp-cli presentation.md --html --theme-set themes/toolshell.css --allow-local-files -o presentation.html
+   npm run build
    ```
+
+   Or run `npm run watch` and just save the file — the browser reloads.
 
 ## Available CSS classes
 
-Look at existing slides for examples — the theme provides `tile`, `grid-2/3`, `term`, `score-card`, `flow`, `compare`, `measure`, `lesson`, `pill-tag`, `chip`, plus body classes `title`, `hero`, `end` for full-bleed layouts.
+Look at existing slides for examples — the theme provides `tile`, `grid-2/3`,
+`term`, `score-card`, `flow`, `compare`, `measure`, `lesson`, `pill-tag`,
+`chip`, plus body classes `title`, `hero`, `end` for full-bleed layouts.

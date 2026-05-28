@@ -1,0 +1,19 @@
+{
+  "name": "toolshell-presentation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marp slide deck about ToolShell / CVE-2025-53770",
+  "scripts": {
+    "assemble": "./build.sh",
+    "build": "npm run assemble && npm run html && npm run pdf",
+    "html": "npm run assemble && marp presentation.md -o presentation.html",
+    "pdf": "npm run assemble && marp presentation.md --pdf -o presentation.pdf",
+    "pptx": "npm run assemble && marp presentation.md --pptx -o presentation.pptx",
+    "preview": "npm run assemble && rm -rf preview && marp presentation.md --images png -o preview/slide.png",
+    "watch": "npm run assemble && marp -w -s . --browser-path /presentation.md",
+    "serve": "npm run assemble && marp -s ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.0"
+  }
+}

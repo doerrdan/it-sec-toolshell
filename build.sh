@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Builds presentation.md by inlining each slide file referenced in presentation.template.md.
-# Each slide lives in slides/*.md so they can be edited individually.
-# After running this, render with:  marp presentation.md --html --allow-local-files
+# Assemble slides/*.md into presentation.md.
+# Run with no args to just assemble; pass `all` to also render HTML, PDF and previews.
 
 set -e
 cd "$(dirname "$0")"
@@ -21,6 +20,15 @@ awk '
   { print }
 ' "$TEMPLATE" > "$OUTPUT"
 
-echo "Built $OUTPUT from $TEMPLATE"
-echo "Render with:  marp $OUTPUT --html --theme-set themes/toolshell.css"
-echo "Or to PDF:    marp $OUTPUT --pdf --html --allow-local-files --theme-set themes/toolshell.css"
+echo "✓ assembled $OUTPUT"
+
+if [[ "${1:-}" == "all" ]]; then
+  MARP="npx --yes @marp-team/marp-cli@latest"
+  $MARP "$OUTPUT" -o presentation.html
+  echo "✓ presentation.html"
+  $MARP "$OUTPUT" --pdf -o presentation.pdf
+  echo "✓ presentation.pdf"
+  rm -rf preview
+  $MARP "$OUTPUT" --images png -o preview/slide.png > /dev/null
+  echo "✓ preview/*.png"
+fi

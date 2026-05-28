@@ -10,10 +10,8 @@
 </div>
 
 <div class="bullet-list">
-<div class="item">Koordinierte globale Angriffswelle</div>
 <div class="item">Deutschland: Behörden und Unternehmen betroffen</div>
 <div class="item warn">BSI-Kritikalität: <strong>Orange</strong> – unverzüglicher Handlungsbedarf</div>
-<div class="item warn">Angriffe erfolgten <strong>vor</strong> Verfügbarkeit eines Patches</div>
 </div>
 
 <!--

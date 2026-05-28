@@ -9,7 +9,7 @@
 <p>Betriebsgeheimnisse · Verträge · HR-Akten</p>
 </div>
 
-<div class="tile danger">
+<div class="tile">
 <div class="head"><h3>Zugangsdaten</h3></div>
 <p>Passwörter · Tokens · Zertifikate</p>
 </div>

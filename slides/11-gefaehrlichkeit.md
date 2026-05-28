@@ -4,7 +4,7 @@
 
 <div class="grid-2">
 
-<div class="tile danger">
+<div class="tile">
 <div class="head"><h3>Kein Login nötig</h3></div>
 </div>
 

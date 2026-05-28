@@ -1,6 +1,6 @@
 # Die <span class="accent">Angreifer</span>
 
-<h2><span class="pill-tag">Threat Actors</span>Staatlich geförderte APT-Gruppen <span style="font-weight:400;font-size:.75em;opacity:.7">(Quellen: Microsoft MSRC, Palo Alto Unit42)</span></h2>
+<h2><span class="pill-tag">Threat Actors</span>Staatlich geförderte APT-Gruppen (vermutlich China)</h2>
 
 <div class="attackers">
 
@@ -10,7 +10,7 @@
 <div class="ico">LT</div>
 <div>
 <h3>Linen Typhoon</h3>
-<p>Geistiges Eigentum · Behörden · Verteidigung</p>
+<p>Geistiges Eigentum · Behörden · Verteidigung · Menschenrechtsorganisation</p>
 </div>
 </div>
 
@@ -18,7 +18,7 @@
 <div class="ico">VT</div>
 <div>
 <h3>Violet Typhoon</h3>
-<p>Spionage · USA, Europa, Ostasien</p>
+<p>Spionage in USA, Europa, Ostasien · Militär · Regierung</p>
 </div>
 </div>
 
@@ -26,7 +26,7 @@
 <div class="ico">S</div>
 <div>
 <h3>Storm-2603</h3>
-<p>Finanziell & spionage-motiviert · China</p>
+<p>Finanziell & spionage-motiviert</p>
 </div>
 </div>
 

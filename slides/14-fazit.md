@@ -6,11 +6,6 @@
 Einfacher Angriff – enormer Schaden
 </div>
 
-<div class="conclusion-list">
-<div class="ci">CVE-2025-53770 – vollständige Kompromittierung ohne Login</div>
-<div class="ci">Staatliche Akteure nutzen Zero-Days für langfristige Infiltration</div>
-<div class="ci highlight">Updates · Monitoring · schnelle Reaktion</div>
-</div>
 
 <!--
 Zusammenfassung in drei Punkten:

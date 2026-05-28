@@ -45,12 +45,6 @@
 <div></div>
 </div>
 
-<div class="measure">
-<div class="num">05</div>
-<div class="body">
-<h4>Notfall-Fallback: Internetzugang trennen</h4>
-</div>
-<div></div>
 </div>
 
 </div>

@@ -34,6 +34,11 @@
 
 </div>
 
+<style scoped>
+.term .badge { font-size: 26px; padding: 18px 24px; min-width: 100px; }
+.term .body em { font-size: 20px; }
+</style>
+
 <!--
 Kurze Erklärung der vier Begriffe, die im Vortrag immer wieder fallen:
 
